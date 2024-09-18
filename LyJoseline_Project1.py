@@ -1,6 +1,6 @@
 # Name : Joseline Ly
 # Project 1 Task 1
-# This programs takes a user's present value, a set interest, and the number of years to calculate the future value.
+# This program takes a user's present value, a set interest, and the number of years to calculate the future value.
 presentValue = float(input("Enter a present dollar amount (float): "))
 interest = float(input("Enter an interest amount (float): "))
 years = int(input("Enter a number of years (integer): "))
