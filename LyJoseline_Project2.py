@@ -35,13 +35,12 @@ def task1():
     get_acronym("American", "Airlines")
 
 # task2 
-def task2(): 
-    val = 0
-    prime = []
-    while True:
-        if (is_prime(val)):
-            prime.append(val)
-        val += 1
+def prime_generator():
+    n = 2
+    while True :
+        if is_prime(n): 
+            yield (n)
+        n += 1
 
 def is_prime(x):
     if x > 1:
@@ -77,7 +76,7 @@ def task3():
 def main():
     #task1()
     #first_50_prime()
-    task2()
+    prime_generator()
     #task_3()
 
 main()
