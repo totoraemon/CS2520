@@ -29,7 +29,7 @@ def tree(branchLen):
             pensize(branchLen / 10)
 
         forward(branchLen)
-        sleep(0.001) # pauses for a short duration to create gradual growth
+        sleep(0.0001) # pauses for a short duration to create gradual growth
         turtle.update()
 
         a = 1.5 * random.random()
