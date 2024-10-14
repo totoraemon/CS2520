@@ -9,8 +9,8 @@ import turtle
 from time import sleep 
 import random
 
-# tree(branchLen) is a recursive function used to create the branches of the tree
 def tree(branchLen):
+    "tree(branchLen) is a recursive function used to create the branches of the tree"
     if branchLen > 3:
         if 8 <= branchLen <= 12:
             if random.randint(0,2) == 0: # allows petals to vary between the colors "snow" and "lightcoral"
@@ -43,8 +43,8 @@ def tree(branchLen):
         backward(branchLen)
         down()
 
-# petal(n) creates loose petals that pool underneath the tree
 def petal(n):
+    "petal(n) creates loose petals that pool underneath the tree"
     petal_colors = ['lightcoral', 'pink', 'lavenderblush', 'mistyrose'] # added in range of petal colors
     for i in range(n):
         a = 200 - 400 * random.random()
@@ -63,6 +63,7 @@ def petal(n):
     
 
 def main():
+    "main() sets up the window and calls tree() and petal(n)"
     turtle.setup(500, 750, 0, 0)
     speed(0) # runs animation at fastest speed to show picture
     bgcolor('LightBlue') # sets the background of the window to "LightBlue"
@@ -73,7 +74,7 @@ def main():
     color('sienna')
     tree(60) # builds a tree, use of random generates different tree each run
     petal(100) # generates petals at base of tree
-    ht()
+    ht() # hides turtle
 
     exitonclick()
 
