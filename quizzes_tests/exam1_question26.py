@@ -6,7 +6,6 @@ def task1(word):
             charCount += 1
     return len(word) - charCount
 
-
 def task2(n):
     count = 0
     if n < 0:
