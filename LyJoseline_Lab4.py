@@ -122,7 +122,7 @@ Values (Method 2): [73, 42, 11, 25, 67, 1, 20, 52, 97, 65, 50, 4, 60, 71, 43, 28
 Execution Time (Method 2) = 0.000000 seconds
 
 (did not include printed arrays for the following due to large sizes)
-Size = 500
+Size = 500g
 Execution Time (Method 1) = 0.000000 seconds
 Execution Time (Method 2) = 0.001790 seconds
 Size = 5000
